@@ -16,7 +16,7 @@
     <div class="container mt-3">
 
         <nav class="navbar navbar-light bg-light mb-3">
-            <a class="navbar-brand" href="https://github.com/0x3333/smbpasswd-web/">
+            <a class="navbar-brand" href="https://github.com/Gurkengewuerz/smbpasswd-web">
                 <img src="logo.png" class="d-inline-block align-middle" alt="">
             </a>
         </nav>
@@ -34,25 +34,36 @@
                                         <i class="fa fa-user-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
-                                <input type="text" class="form-control" id="username" readonly>
+                                <input type="text" class="form-control" id="username">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label for="currentPassword">Current Password</label>
                             <div class="input-group input-group-lg">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
-                                        <i id="thermometer" class="fa fa-thermometer-0" aria-hidden="true"></i>
+                                        <i id="currentPassword-icon" class="fa fa-lock" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" id="currentPassword" aria-label="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">New Password</label>
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i id="password-icon" class="fa fa-thermometer-0" aria-hidden="true"></i>
                                     </span>
                                 </div>
                                 <input type="password" class="form-control" id="password" aria-label="Password">
                                 <div class="input-group-append">
-                                    <span class="input-group-text" id="thermometer-msg"></span>
+                                    <span class="input-group-text" id="password-msg"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="password-check">Repeat Password</label>
+                            <label for="password-check">Repeat new Password</label>
                             <div class="input-group input-group-lg">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">

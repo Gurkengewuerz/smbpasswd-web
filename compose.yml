@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+
+  sambapasswd:
+    image: gurken2108/smbpasswd
+    environment:
+      SAMBA_HOST: samba
+      LISTEN_ADDRESS: 0.0.0.0
+    ports:
+      - "8080:8080"
+    logging:
+        driver: "local"
+        options:
+            max-size: "10m"
+            max-file: "5"
+  

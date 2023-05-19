@@ -11,3 +11,7 @@
 input[type=button] {
     cursor: pointer;
 }
+
+.navbar-brand {
+    margin: auto;
+}
